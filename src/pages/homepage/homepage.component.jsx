@@ -1,7 +1,5 @@
 import React from 'react';
 
-import logo from '../../logo.svg';
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button } from 'react-bootstrap';
 import Container from 'react-bootstrap/Container'
@@ -13,7 +11,7 @@ const HomePage = () => {
 
     return(
      <div className="Homepage">
-         <img src={logo} alt="logo" />
+        
           <p>
             Edit <code>src/App.js</code>radny
           </p>

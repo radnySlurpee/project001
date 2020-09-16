@@ -1,0 +1,23 @@
+.nav-menu {
+    z-index: 4;
+    position: absolute;
+    background: #101010;
+    height: 100vh;
+    width: 100%;
+}
+
+.nav-data {
+    padding: 6em 0 0 2em;
+    text-align: left;
+}
+
+ul {
+    list-style: none;
+}
+
+li{
+    color: white;
+    font-family: BebasNeue;
+    letter-spacing: 10px;
+    font-size: 4em;
+}

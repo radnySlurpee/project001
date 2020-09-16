@@ -1,0 +1,11 @@
+<svg id="NAV" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <g id="Ellipse_1" data-name="Ellipse 1" fill="none" stroke="#fff" stroke-width="3">
+    <circle cx="25" cy="25" r="25" stroke="none"/>
+    <circle cx="25" cy="25" r="23.5" fill="none"/>
+  </g>
+  <g id="Group_1" data-name="Group 1" transform="translate(-1839.5 -37.5)">
+    <line id="Line_1" data-name="Line 1" x2="18" transform="translate(1855.5 55.5)" fill="none" stroke="#fff" stroke-width="3"/>
+    <line id="Line_2" data-name="Line 2" x2="18" transform="translate(1855.5 62.5)" fill="none" stroke="#fff" stroke-width="3"/>
+    <line id="Line_3" data-name="Line 3" x2="18" transform="translate(1855.5 69.5)" fill="none" stroke="#fff" stroke-width="3"/>
+  </g>
+</svg>
