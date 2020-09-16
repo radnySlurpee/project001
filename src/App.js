@@ -1,45 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button } from 'react-bootstrap';
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
+
+import { Switch, Route } from 'react-router-dom';
+import Homepage from './pages/homepage/homepage.component';
+import Aboutpage from './pages/aboutpage/aboutpage.component';
 
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code>radny
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <Container>
-  <Row>
-    <Col>1 of 2</Col>
-    <Col>2 of 2</Col>
-  </Row>
-  <Row>
-    <Col>1 of 3</Col>
-    <Col>2 of 3</Col>
-    <Col>3 of 3</Col>
-  </Row>
-</Container>
-        <Button variant="success"> click </Button>
-      </header>
-    </div>
-  );
+class App extends React.Component{
+
+  render(){
+    return (
+      <div className="App">
+        <Switch>
+                  <Route exact path='/' component={Homepage} />
+                  <Route path='/about' component={Aboutpage} /> 
+        </Switch>
+      </div>
+    );
+  }
 }
 
 export default App;
