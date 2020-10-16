@@ -1,5 +1,5 @@
 .toggle-btn {
-    position: fixed;
+    position: absolute;
     margin: 1.4em;
     padding: 1em;
     right: 0;

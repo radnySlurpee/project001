@@ -1,3 +1,93 @@
 .Homepage{
     background-color:transparent;
 }
+
+.Hero{
+    padding-top: 70px;
+}
+
+.HeroImage{
+    left: -280px;
+    top: -40px;
+}
+
+
+.HeroHeader{
+    position: absolute;
+    left: -280px;
+    top: -40px;
+    letter-spacing: 10px;
+    font-size: 4em;
+}
+
+.HeroTiltHeader{
+    position: absolute;
+    top: 120px;
+    width: 100%;
+    right: 30px;
+    letter-spacing: 3px;
+    font-size: 2em;
+    transform: rotate(-90deg);
+}
+
+.autobiography-row{
+    margin-top: 100px;
+    letter-spacing: 3px;
+    font-size: 20px;
+}
+
+.autobiography-row-text{
+    font-family: Poppins;
+    font-size: 15px;
+}
+
+
+.Bebasfont{
+    color: white;
+    font-family: BebasNeue;
+}
+
+
+/* Responsiveness */
+
+@media only screen and (max-width: 991px) {
+    .Hero{
+        padding-top: 150px;
+     }
+     
+     .HeroImage{
+        min-width: 250px;
+        height: auto;
+     }
+
+
+     .HeroTiltHeader{
+        position: absolute;
+        top: 20px;
+        min-width: 400px;
+        width: 100%;
+        right: -140px;
+        letter-spacing: 2px;
+        font-size: 15px;
+        transform: rotate(-90deg);
+    }
+     
+     .HeroHeader{
+        letter-spacing: 5px;
+        font-size: 2em;
+         position: absolute;
+         left: -150px;
+         top: -20px;
+     }
+
+     .autobiography-row{
+        margin-top: 20px;
+        letter-spacing: 3px;
+        font-size: 20px;
+    }
+     
+     .Bebasfont{
+         color: white;
+         font-family: BebasNeue;
+     }     
+}

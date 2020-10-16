@@ -10,7 +10,7 @@ const NavMenu = (hidden) => {
 
     const variants = {
         open: { top: '0%' },
-        closed: { top: '-100%' },
+        closed: { top: '-150%' },
     }
 
     return(
@@ -22,7 +22,7 @@ const NavMenu = (hidden) => {
                 stiffness: 400,
                 damping: 40 }}
             className="nav-menu" 
-            style={{top: '-100%'}}>
+            style={{top: '-150%'}}>
 
             <div className="nav-data">
                <ul>
