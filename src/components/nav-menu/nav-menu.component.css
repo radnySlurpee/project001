@@ -10,15 +10,19 @@
 .nav-data {
     padding: 6em 0 0 2em;
     text-align: left;
+    width: fit-content;
 }
 
 ul {
     list-style: none;
 }
 
-li{
+a{
     color: white;
     font-family: BebasNeue;
     letter-spacing: 10px;
     font-size: 4em;
+    cursor: pointer;
+    user-select: none;
+    scale: 1;
 }

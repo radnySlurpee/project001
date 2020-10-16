@@ -2,11 +2,14 @@ import React from 'react';
 import './nav-menu.component.css';
 
 import { motion } from "framer-motion"
+import NavMenuItem from "../nav-menu/nav-menu-item.component";
 
 import { connect } from 'react-redux';
-import {selectNavigationHidden} from '../../redux/navigation/navigation.selectors';
+import { selectNavigationHidden } from '../../redux/navigation/navigation.selectors';
 
 const NavMenu = (hidden) => {
+
+    const items = ["HOME", "ABOUT"];
 
     const variants = {
         open: { top: '0%' },
@@ -26,8 +29,9 @@ const NavMenu = (hidden) => {
 
             <div className="nav-data">
                <ul>
-                    <li>HOME</li>
-                    <li>ABOUT</li>
+                    {items.map((item, index) => (
+                        <NavMenuItem item={item} key={index} />
+                    ))}
                </ul>
             </div>
         </motion.div>
