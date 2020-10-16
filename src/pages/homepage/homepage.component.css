@@ -11,6 +11,10 @@
     top: -40px;
 }
 
+.HeroImageFooter{
+    position: absolute;
+    font-size: 10px;
+}
 
 .HeroHeader{
     position: absolute;
@@ -30,6 +34,19 @@
     transform: rotate(-90deg);
 }
 
+.TiltFooter{
+    position: absolute;
+    top: 80%;
+    background-color: #9EFF41;
+    color: black;
+    font-family: BarcodeFont;
+    font-size: 80px;
+    letter-spacing: 5px;
+    padding: 5px;
+    min-width: 85px;
+    width: fit-content;
+}
+
 .autobiography-row{
     margin-top: 100px;
     letter-spacing: 3px;
@@ -45,6 +62,11 @@
 .Bebasfont{
     color: white;
     font-family: BebasNeue;
+}
+
+.footer-padding{
+    text-align: center;
+    padding: 50px;
 }
 
 
@@ -80,14 +102,27 @@
          top: -20px;
      }
 
+     .TiltFooter{
+        position: absolute;
+        top: 270px;
+        left: -55px;
+        background-color: #9EFF41;
+        color: black;
+        font-family: BarcodeFont;
+        font-size: 35px;
+        letter-spacing: 1px;
+        padding: 5px;
+        min-width: 85px;
+        width: fit-content;
+    }
      .autobiography-row{
-        margin-top: 20px;
+        margin-top: 50px;
         letter-spacing: 3px;
         font-size: 20px;
     }
      
-     .Bebasfont{
+    .Bebasfont{
          color: white;
          font-family: BebasNeue;
-     }     
+    }     
 }

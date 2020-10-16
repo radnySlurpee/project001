@@ -8,13 +8,23 @@ import { connect } from 'react-redux';
 import { toggleNavigationHidden } from '../../redux/navigation/navigation.actions';
 import {selectNavigationHidden} from '../../redux/navigation/navigation.selectors';
 
+import { motion } from "framer-motion";
+
 const Navigation = ({ toggleNavigationHidden, hidden }) => {
 
     return(
-        <div className="toggle-btn" 
-             onClick={toggleNavigationHidden}>
+        <motion.div
+            className="toggle-btn"
+            initial={{opacity: 0, x: 50}}
+            animate={{opacity: 1, x: 0}}
+            transition={{  
+            delay: 1,
+            duration: 0.2,
+            ease: "linear"
+            }}
+            onClick={toggleNavigationHidden}>
                 {hidden ? <Navlogo/> : <NavlogoClose/>}
-        </div>
+        </motion.div>
     )
 }
 

@@ -1,9 +1,14 @@
 @font-face {
     font-family: 'BebasNeue';
     src: local('BebasNeue'), url(./assets/BebasNeue-Regular.ttf) format('truetype');
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: 'Poppins';
     src: local('Poppins'), url(./assets/Poppins-Regular.ttf) format('truetype');
-  }
+}
+
+@font-face {
+  font-family: 'BarcodeFont';
+  src: local('BarcodeFont'), url(./assets/BarcodeFont.ttf) format('truetype');
+}
