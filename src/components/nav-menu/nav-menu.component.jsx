@@ -1,22 +1,41 @@
 import React from 'react';
 import './nav-menu.component.css';
 
-const NavMenu = () => {
+import { motion } from "framer-motion"
 
-    const navTransistion = {
-        top: '0%', //if top 0% then show menu
-      };
+import { connect } from 'react-redux';
+import {selectNavigationHidden} from '../../redux/navigation/navigation.selectors';
+
+const NavMenu = (hidden) => {
+
+    const variants = {
+        open: { top: '0%' },
+        closed: { top: '-100%' },
+    }
 
     return(
-        <div className="nav-menu" style={navTransistion}>
+        <motion.div 
+            animate={!hidden.hidden ? "open" : "closed"}
+            variants={variants}
+            transition={{  
+                type: "spring",
+                stiffness: 400,
+                damping: 40 }}
+            className="nav-menu" 
+            style={{top: '-100%'}}>
+
             <div className="nav-data">
                <ul>
                     <li>HOME</li>
                     <li>ABOUT</li>
                </ul>
             </div>
-        </div>
+        </motion.div>
     )
 };
 
-export default NavMenu;
+const mapStateToProps = (state) => ({
+    hidden: selectNavigationHidden(state)
+})
+
+export default connect(mapStateToProps)(NavMenu);
