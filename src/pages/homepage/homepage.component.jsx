@@ -19,66 +19,74 @@ const HomePage = () => {
     return(
      <div className="Homepage">
           <Container>
-
               <Row className="Hero">
                 <Col>
                   <motion.div
-                    initial={{opacity: 0, x: -20}}
-                    animate={{opacity: 1, x: 0}}
-                    transition={{  
-                      delay: 3,
-                      duration: 0.5,
-                      ease: "linear"
-                    }}
-                  >
-                    <Image className="HeroImage" src={REDradimage} fluid />
-                     
+                      className="HeroContainter"
+                      initial={{ opacity:0 }}
+                      animate={{ opacity:1 }}
+                      transition={{ 
+                        delay: 2,
+                      }}>
+                    <motion.div
+                      className="HeroImageWrapper"
+                      initial={{ width: "100%", right: 0}}
+                      animate={{ width: "0%", right: 0}}
+                      transition={{ 
+                        delay: 3,
+                        duration: 0.2,
+                        ease: "easeInOut"
+                      }}> 
+                    </motion.div>
+
+                      <Image className="HeroImage" src={REDradimage} fluid />
+              
                     <div className="HeroImageFooter">
                       ::::::::::: TERMINAL :::::::::
                       <BaffleTextFilter 
                         text={"0000000000000"} 
                         speed={150} 
                         obfuscate={true}
-                        isKanji={true}/>
+                        type={"kanji"}/>
                     </div>
                   </motion.div>
                 </Col>
                 <Col> 
-                <motion.div
+                  <motion.div
                      initial={{opacity: 0}}
                      animate={{opacity: 1}}
                     transition={{  
-                      delay: 1,
+                      delay: 3,
                       duration: 2,
                       ease: "linear"
-                    }}
-                  >
+                    }}>
+
                     <div className="Bebasfont HeroHeader"> 
                       <BaffleTextFilter 
                         text={"RAD YR2020"} 
                         speed={100} 
                         obfuscate={false}
-                        isKanji={true}/>
+                        type={"kanji"}/>
                     </div>
                     <div className="Bebasfont HeroTiltHeader">
-                      ENCRYPTION KEYS:
+                      RENDERING MEMORY:
                       <BaffleTextFilter 
                         text={"RAD RAD"} 
                         speed={300} 
-                        obfuscate={true}/><br/>
+                        obfuscate={true}
+                        type={"tone"}/><br/>
                       <BaffleTextFilter 
-                        text={"RAD RAD RAD RAD RAD RAD RAD "} 
+                        text={"RAD RAD RAD RAD RAD "} 
                         speed={120} 
                         obfuscate={false}
-                        isKanji={true}/>
+                        type={"kanji"}/>
                     </div>
                     <div className="TiltFooter"> 
                       Hello 
                       <BaffleTextFilter 
                         text={"World"} 
                         speed={200} 
-                        obfuscate={true}
-                        isKanji={false}/>
+                        obfuscate={true}/>
                     </div>
                   </motion.div>
                     
@@ -90,7 +98,7 @@ const HomePage = () => {
                     initial={{opacity: 0, y: -2, skewY:1}}
                     animate={{opacity: 1, y: 0, skewY:0}}
                     transition={{  
-                      delay: 5,
+                      delay: 4,
                       duration: 0.3,
                       ease: "linear"
                     }}
@@ -108,7 +116,7 @@ const HomePage = () => {
                 initial={{opacity: 0, y: -2, skewY:1}}
                 animate={{opacity: 1, y: 0, skewY:0}}
                 transition={{  
-                  delay: 6,
+                  delay: 5,
                   duration: 0.3,
                   ease: "linear"
                 }}>

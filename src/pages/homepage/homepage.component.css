@@ -1,9 +1,21 @@
 .Homepage{
     background-color:transparent;
+
 }
 
 .Hero{
     padding-top: 70px;
+}
+
+.HeroContainter{
+    position: relative;
+}
+
+.HeroImageWrapper{
+    width: 100%;
+    height: 100%;
+    background-color: chartreuse;
+    position: absolute;
 }
 
 .HeroImage{
@@ -76,6 +88,10 @@
     .Hero{
         padding-top: 150px;
      }
+
+    .HeroImageWrapper{
+        background-color: chartreuse;
+    }
      
      .HeroImage{
         min-width: 250px;

@@ -13,19 +13,20 @@ const NavMenu = (hidden) => {
 
     const variants = {
         open: { top: '0%' },
-        closed: { top: '-150%' },
+        closed: { top: '-100%' },
     }
 
     return(
         <motion.div 
+            className="nav-menu"
             animate={!hidden.hidden ? "open" : "closed"}
+            initial={{top: '-100%'}}
             variants={variants}
             transition={{  
                 type: "spring",
                 stiffness: 400,
-                damping: 40 }}
-            className="nav-menu" 
-            style={{top: '-150%'}}>
+                damping: 40 
+            }}>
 
             <div className="nav-data">
                <ul>

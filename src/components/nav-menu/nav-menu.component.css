@@ -2,7 +2,7 @@
     z-index: 4;
     position: absolute;
     background: #101010;
-    height: 100vh;
+    height: 100%;
     width: 100%;
 }
 
@@ -21,8 +21,8 @@ a{
     color: white;
     font-family: BebasNeue;
     letter-spacing: 10px;
-    font-size: 4em;
+    font-size: 3em;
     cursor: pointer;
     user-select: none;
-    scale: 1;
+    
 }
