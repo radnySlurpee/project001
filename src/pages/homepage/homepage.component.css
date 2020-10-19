@@ -3,8 +3,24 @@
 
 }
 
+.Intro{
+    padding-top: 70px;
+}
+
+.IntroText{
+    padding-top: 70px;
+    height: 300px;
+    text-align: center;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    font-family: futura;
+}
+
+
+
 .Hero{
     padding-top: 70px;
+    user-select: none;
 }
 
 .HeroContainter{
@@ -93,13 +109,12 @@
         background-color: chartreuse;
     }
      
-     .HeroImage{
+    .HeroImage{
         min-width: 250px;
         height: auto;
-     }
+    }
 
-
-     .HeroTiltHeader{
+    .HeroTiltHeader{
         position: absolute;
         top: 20px;
         min-width: 400px;
@@ -110,15 +125,15 @@
         transform: rotate(-90deg);
     }
      
-     .HeroHeader{
+    .HeroHeader{
         letter-spacing: 5px;
         font-size: 2em;
          position: absolute;
          left: -150px;
          top: -20px;
-     }
+    }
 
-     .TiltFooter{
+    .TiltFooter{
         position: absolute;
         top: 270px;
         left: -55px;
@@ -131,7 +146,8 @@
         min-width: 85px;
         width: fit-content;
     }
-     .autobiography-row{
+
+    .autobiography-row{
         margin-top: 50px;
         letter-spacing: 3px;
         font-size: 20px;

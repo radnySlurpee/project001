@@ -12,3 +12,8 @@
   font-family: 'BarcodeFont';
   src: local('BarcodeFont'), url(./assets/BarcodeFont.ttf) format('truetype');
 }
+
+@font-face {
+  font-family: 'Futura';
+  src: local('FutuLt'), url(./assets/FutuLt.ttf) format('truetype');
+}

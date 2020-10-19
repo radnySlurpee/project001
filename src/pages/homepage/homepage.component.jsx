@@ -12,6 +12,7 @@ import Image from 'react-bootstrap/Image';
 import BaffleTextFilter from '../../components/baffle-text-filter/baffle-text-filter.jsx';
 
 import REDradimage from '../../assets/REDrad.jpg';
+import {ReactComponent as IntroductionRsvg} from '../../assets/introduction_R.svg';
 
 
 const HomePage = () => {
@@ -19,27 +20,46 @@ const HomePage = () => {
     return(
      <div className="Homepage">
           <Container>
-              <Row className="Hero">
-                <Col>
-                  <motion.div
-                      className="HeroContainter"
-                      initial={{ opacity:0 }}
-                      animate={{ opacity:1 }}
-                      transition={{ 
-                        delay: 2,
-                      }}>
-                    <motion.div
-                      className="HeroImageWrapper"
-                      initial={{ width: "100%", right: 0}}
-                      animate={{ width: "0%", right: 0}}
-                      transition={{ 
-                        delay: 3,
-                        duration: 0.2,
-                        ease: "easeInOut"
-                      }}> 
-                    </motion.div>
+            <Row className="Intro">
+              <Col>
+                <IntroductionRsvg/>
+                <br/>
 
-                      <Image className="HeroImage" src={REDradimage} fluid />
+                <div className="IntroText">
+                  Imagination is more important than knowledge. 
+                  <br/>
+                  For knowledge is limited, 
+                  <br/>
+                  whereas imagination embraces the entire world, 
+                  <br/>
+                  stimulating progress, 
+                  giving birth to evolution.
+                </div>
+
+              </Col>
+            </Row>
+            <Row className="Hero">
+              <Col>
+                <motion.div
+                  className="HeroContainter"
+                  initial={{ opacity:0 }}
+                  animate={{ opacity:1 }}
+                  transition={{ 
+                    delay: 2,
+                  }}>
+                <motion.div
+                  className="HeroImageWrapper"
+                  initial={{ width: "100%", right: 0}}
+                  animate={{ width: "0%", right: 0}}
+                  transition={{ 
+                    delay: 3,
+                    damping: 15, 
+                    mass: 0.27, 
+                    stiffness: 55
+                  }}> 
+                  </motion.div>
+
+                    <Image className="HeroImage" src={REDradimage} fluid />
               
                     <div className="HeroImageFooter">
                       ::::::::::: TERMINAL :::::::::
@@ -111,17 +131,6 @@ const HomePage = () => {
                   </motion.div>
                 </Col>
               </Row>
-              <motion.footer
-                className="footer-padding"
-                initial={{opacity: 0, y: -2, skewY:1}}
-                animate={{opacity: 1, y: 0, skewY:0}}
-                transition={{  
-                  delay: 5,
-                  duration: 0.3,
-                  ease: "linear"
-                }}>
-                  Made with React 
-              </motion.footer>
           </Container>
 
      </div>   
