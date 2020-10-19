@@ -12,6 +12,7 @@ import Image from 'react-bootstrap/Image';
 import BaffleTextFilter from '../../components/baffle-text-filter/baffle-text-filter.jsx';
 
 import REDradimage from '../../assets/REDrad.jpg';
+import RadPoster1image from '../../assets/radPoster1.jpg'
 import {ReactComponent as IntroductionRsvg} from '../../assets/introduction_R.svg';
 
 
@@ -102,11 +103,7 @@ const HomePage = () => {
                         type={"kanji"}/>
                     </div>
                     <div className="TiltFooter"> 
-                      Hello 
-                      <BaffleTextFilter 
-                        text={"World"} 
-                        speed={200} 
-                        obfuscate={true}/>
+                      Hello World
                     </div>
                   </motion.div>
                     
@@ -130,6 +127,12 @@ const HomePage = () => {
                     <div className="autobiography-row-text"> ACADEMICS <br/> : ACLC College </div>
                   </motion.div>
                 </Col>
+              </Row>
+              <Row>
+                <div className="posterImage1">
+                  <Image src={RadPoster1image} fluid />
+                </div>
+                
               </Row>
           </Container>
 
