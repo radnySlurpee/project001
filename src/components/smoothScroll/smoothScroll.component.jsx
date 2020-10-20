@@ -41,6 +41,7 @@ const SmoothScroll = ({ children }) => {
 
   if (isMobile) {
     spring = 0;
+
   }
 
   return (

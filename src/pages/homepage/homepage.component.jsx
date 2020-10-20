@@ -2,7 +2,7 @@ import React from 'react';
 import "./homepage.component.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { motion } from "framer-motion"
+import { motion, } from "framer-motion"
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -154,11 +154,9 @@ const HomePage = () => {
 
               </Row>
               <Row>
-
                 <div className="posterImage1">
-                  <Image src={RadPoster1image} fluid />
+                    <Image src={RadPoster1image} fluid />
                 </div>
-                
               </Row>
           </Container>
 

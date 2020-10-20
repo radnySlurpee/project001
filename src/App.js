@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 import { Switch, Route } from 'react-router-dom';
 import Homepage from './pages/homepage/homepage.component';
 import Aboutpage from './pages/aboutpage/aboutpage.component';
@@ -16,6 +15,7 @@ class App extends React.Component{
     return (
       <div className="App">
           <NavBar/>
+
           <SmoothScroll>
             <Switch>
               <Route exact path='/' component={Homepage} />
