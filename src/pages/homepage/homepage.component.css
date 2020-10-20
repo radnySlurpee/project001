@@ -96,7 +96,8 @@
 }
 
 .first-text-row{
-    padding-top: 70px;
+    margin-top: 200px;
+    margin-bottom: 200px;
     height: 300px;
     font-family: Poppins;
     letter-spacing: 10px;
@@ -173,7 +174,7 @@
 
     .autobiography-row-text{
         padding: 20px;
-        letter-spacing: 3px;
+        letter-spacing: 2px;
         font-size: 18px;
         font-family: Futura;
         margin-left: 0;

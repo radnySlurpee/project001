@@ -104,7 +104,7 @@ const HomePage = () => {
                 <Col> 
                     <motion.div
                       className="autobiography-row-text"
-                      whileHover={{backgroundColor: "rgb(158,255,65)", skewY:-5, color:"black"}}
+                      whileHover={{backgroundColor: "rgb(158,255,65)", skewY:-7, color: "rgb(0,0,0)"}}
                       transition={{ 
                         damping: 15, 
                         mass: 0.27, 
@@ -117,7 +117,7 @@ const HomePage = () => {
                             delay: 4,
                             duration: 0.3,
                             ease: "linear"}}> 
-                              INFORMATION TECH.
+                              radnyongtawco123@gmail.com
                           </motion.div>
 
                     </motion.div>
@@ -128,20 +128,19 @@ const HomePage = () => {
                 <Col> 
                     <motion.div
                       className="autobiography-row-text"
-                      whileHover={{backgroundColor: "rgb(255,255,255)", skewY:5, color:"black"}}
                       transition={{ 
                         damping: 15, 
                         mass: 0.27, 
                         stiffness: 55}}> 
 
                         <motion.div
-                          initial={{opacity: 0, y: -2, skewY:2}}
-                          animate={{opacity: 1, y: 0, skewY:0}}
+                          initial={{opacity: 0, y: -2, skewY:0, }}
+                          animate={{opacity: 1, y: 0, backgroundColor: "rgb(255,255,255)", skewY:7, color: "rgb(0,0,0)"}}
                           transition={{  
                             delay: 4,
                             duration: 0.3,
                             ease: "linear"}}> 
-                              JOSEPH RADNY ONGTAWCO
+                              JOSEPH RADNY Y.0.
                           </motion.div>
                           
                     </motion.div>
@@ -154,10 +153,7 @@ const HomePage = () => {
                 </div>
 
               </Row>
-
               <Row>
-
-               
 
                 <div className="posterImage1">
                   <Image src={RadPoster1image} fluid />
