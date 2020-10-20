@@ -5,6 +5,7 @@
 
 .Intro{
     padding-top: 70px;
+    user-select: none;
 }
 
 .IntroText{
@@ -85,10 +86,34 @@
 }
 
 .posterImage1{
-    padding-top: 30px;
+    padding-top: 70px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.first-text-row{
+    padding-top: 70px;
+    height: 300px;
+    font-family: Poppins;
+    letter-spacing: 10px;
+    font-size: 6em;
+    text-align: center;
+    width: fit-content;
+
+}
+.first-text-borderline-row{
+    padding-top: 70px;
+    height: 300px;
+    font-family: Poppins;
+    letter-spacing: 10px;
+    font-size: 6em;
+    text-align: center;
+    width: fit-content;
+    color: black;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 
 .Bebasfont{

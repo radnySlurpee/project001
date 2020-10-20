@@ -23,20 +23,11 @@ const HomePage = () => {
           <Container>
             <Row className="Intro">
               <Col>
-                <IntroductionRsvg/>
+                <IntroductionRsvg/> 
                 <br/>
-
-                <div className="IntroText">
-                  Imagination is more important than knowledge. 
-                  <br/>
-                  For knowledge is limited, 
-                  <br/>
-                  whereas imagination embraces the entire world, 
-                  <br/>
-                  stimulating progress, 
-                  giving birth to evolution.
+                <div className="IntroText"> 
+                   Look at Usual Things With Unusual Eyes
                 </div>
-
               </Col>
             </Row>
             <Row className="Hero">
@@ -128,7 +119,18 @@ const HomePage = () => {
                   </motion.div>
                 </Col>
               </Row>
+
               <Row>
+                <div className="first-text-row">
+                     IT | DEV
+                </div>
+
+              </Row>
+
+              <Row>
+
+               
+
                 <div className="posterImage1">
                   <Image src={RadPoster1image} fluid />
                 </div>
