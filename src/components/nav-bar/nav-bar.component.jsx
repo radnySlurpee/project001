@@ -1,7 +1,15 @@
 import React from 'react';
 
-const NavBar = ({}) => {
+import Navigation from '../navigation/navigation.component';
+import NavMenu from '../nav-menu/nav-menu.component';
 
+const NavBar = () => {
+    return(
+        <div>
+            <Navigation/>
+            <NavMenu/>
+        </div>
+    )
 
 }
 

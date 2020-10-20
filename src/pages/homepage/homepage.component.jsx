@@ -81,7 +81,7 @@ const HomePage = () => {
                         type={"kanji"}/>
                     </div>
                     <div className="Bebasfont HeroTiltHeader">
-                      RENDERING MEMORY:
+                      READING DATA:
                       <BaffleTextFilter 
                         text={"RAD RAD"} 
                         speed={300} 
@@ -102,21 +102,49 @@ const HomePage = () => {
               </Row>
               <Row className="autobiography-row">
                 <Col> 
-                  <motion.div
-                    initial={{opacity: 0, y: -2, skewY:1}}
-                    animate={{opacity: 1, y: 0, skewY:0}}
-                    transition={{  
-                      delay: 4,
-                      duration: 0.3,
-                      ease: "linear"
-                    }}
-                  >
-                    <b className="Bebasfont"> BIO : </b>
-                    <br/>
-                    <div className="autobiography-row-text"> NAME <br/> : JOSEPH RADNY ONGTAWCO </div>
-                    <div className="autobiography-row-text"> BIRTH <br/> : JAN 28 1998 </div>
-                    <div className="autobiography-row-text"> ACADEMICS <br/> : ACLC College </div>
-                  </motion.div>
+                    <motion.div
+                      className="autobiography-row-text"
+                      whileHover={{backgroundColor: "rgb(158,255,65)", skewY:-5, color:"black"}}
+                      transition={{ 
+                        damping: 15, 
+                        mass: 0.27, 
+                        stiffness: 55}}> 
+
+                        <motion.div
+                          initial={{opacity: 0, y: -2, skewY:2}}
+                          animate={{opacity: 1, y: 0, skewY:0}}
+                          transition={{  
+                            delay: 4,
+                            duration: 0.3,
+                            ease: "linear"}}> 
+                              INFORMATION TECH.
+                          </motion.div>
+
+                    </motion.div>
+                </Col>
+              </Row>
+
+              <Row className="autobiography-row">
+                <Col> 
+                    <motion.div
+                      className="autobiography-row-text"
+                      whileHover={{backgroundColor: "rgb(255,255,255)", skewY:5, color:"black"}}
+                      transition={{ 
+                        damping: 15, 
+                        mass: 0.27, 
+                        stiffness: 55}}> 
+
+                        <motion.div
+                          initial={{opacity: 0, y: -2, skewY:2}}
+                          animate={{opacity: 1, y: 0, skewY:0}}
+                          transition={{  
+                            delay: 4,
+                            duration: 0.3,
+                            ease: "linear"}}> 
+                              JOSEPH RADNY ONGTAWCO
+                          </motion.div>
+                          
+                    </motion.div>
                 </Col>
               </Row>
 
