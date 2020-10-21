@@ -26,3 +26,7 @@ a{
     user-select: none;
     
 }
+
+a:link{
+    text-decoration: none;
+}

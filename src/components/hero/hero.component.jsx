@@ -11,8 +11,6 @@ import Image from 'react-bootstrap/Image';
 import BaffleTextFilter from '../../components/baffle-text-filter/baffle-text-filter.jsx';
 import REDradimage from '../../assets/REDrad.jpg';
 
-
-
 const Hero = () => {
 
     return(
@@ -41,7 +39,7 @@ const Hero = () => {
         
               <div className="hero-image-footer">
                 <BaffleTextFilter 
-                  text={"IDENTITY"} 
+                  text={"01"} 
                   speed={150} 
                   obfuscate={false}
                   type={"kanji"}/>
@@ -58,30 +56,20 @@ const Hero = () => {
                 ease: "linear"
               }}>
 
-              <div className="bebas-font hero-header"> 
+              <div className="hero-header"> 
                 <BaffleTextFilter 
-                  text={"RAD YR2020"} 
-                  speed={100} 
+                  text={"I'm Rad"} 
+                  speed={200} 
                   obfuscate={false}
                   type={"kanji"}/>
               </div>
-              <div className="bebas-font hero-tilt-header">
-                    Konnichiwa | 
 
-                    <BaffleTextFilter 
-                    text={" Hello"} 
-                    speed={300} 
-                    obfuscate={false}
-                    type={"tone"}/><br/>
-                    <BaffleTextFilter 
-                    text={"RAD RAD RAD RAD RAD "} 
-                    speed={120} 
-                    obfuscate={false}
-                    type={"kanji"}/>
-
-              </div>
-              <div className="tilt-footer"> 
-                Hello World
+              <div className="hero-tilt-header">
+              <BaffleTextFilter 
+                  text={"HELLO"} 
+                  speed={200} 
+                  obfuscate={false}
+                  type={"tone"}/>
               </div>
             </motion.div>
               

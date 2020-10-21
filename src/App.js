@@ -18,8 +18,8 @@ class App extends React.Component{
 
           <SmoothScroll>
             <Switch>
-              <Route exact path='/' component={Homepage} />
-              <Route path='/about' component={Aboutpage} /> 
+              <Route path='/' component={Homepage} />
+              <Route exact path='/about' component={Aboutpage} /> 
             </Switch>
           </SmoothScroll>
       </div>

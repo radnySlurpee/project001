@@ -1,0 +1,48 @@
+.biography-row{
+    margin-top: 200px;
+    text-align: center;
+    justify-content: center;
+    font-size: 18px;
+    user-select: none;
+}
+
+.biography-row-text{
+    padding: 20px;
+    letter-spacing: 3px;
+    font-size: 1em;
+    font-family: Futura;
+    margin-left: -50%;
+    margin-right: -50%;
+}
+
+.resume-link-text{
+    color: rgb(255,255,255);
+}
+
+.resume-link-text:link{
+    text-decoration: none;
+}
+
+.resume-link-text:hover{
+    color: rgb(19,19,19);
+}
+
+
+@media only screen and (max-width: 991px) {
+
+    .biography-row{
+        margin-top: 100px;
+        text-align: center;
+    }
+
+    .biography-row-text{
+        padding: 20px;
+        letter-spacing: 2px;
+        font-size: 10px;
+        font-family: Futura;
+        margin-left: 0;
+        margin-right: 0;
+        overflow-y: hidden;
+    }
+     
+}

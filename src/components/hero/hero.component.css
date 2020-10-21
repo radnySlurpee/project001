@@ -1,7 +1,6 @@
-
-
 .hero{
     padding-top: 70px;
+    font-size: 18px;
 }
 
 .hero-container{
@@ -21,11 +20,12 @@
 }
 
 .hero-image-footer{
-    position: absolute;
-    font-size: 10px;
+    font-size: 30px;
+    font-family: Poppins;
 }
 
 .hero-header{
+    font-family: Futura;
     position: absolute;
     left: -280px;
     top: -40px;
@@ -35,69 +35,14 @@
 
 .hero-tilt-header{
     position: absolute;
-    top: 120px;
+    top: 40%;
     width: 100%;
-    right: 30px;
-    letter-spacing: 3px;
-    font-size: 2em;
+    right: 30%;
+    font-family: Monoton;
+    letter-spacing: 30px;
+    font-size: 7em;
     transform: rotate(-90deg);
-}
-
-.tilt-footer{
-    position: absolute;
-    top: 80%;
-    background-color: #9EFF41;
-    color: black;
-    font-family: BarcodeFont;
-    font-size: 80px;
-    letter-spacing: 5px;
-    padding: 5px;
-    min-width: 85px;
-    width: fit-content;
-}
-
-.autobiography-row{
-    margin-top: 100px;
-    text-align: center;
-    justify-content: center;
-}
-
-.autobiography-row-text{
-    padding: 20px;
-    letter-spacing: 3px;
-    font-size: 3em;
-    font-family: Futura;
-    margin-left: -50%;
-    margin-right: -50%;
-}
-
-.posterImage1{
-    padding-top: 70px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.first-text-row{
-    margin-top: 200px;
-    margin-bottom: 200px;
-    height: 300px;
-    font-family: Poppins;
-    letter-spacing: 10px;
-    font-size: 6em;
-    text-align: center;
-    width: fit-content;
-
-}
-
-.bebas-font{
-    color: white;
-    font-family: BebasNeue;
-}
-
-.footer-padding{
-    text-align: center;
-    padding: 50px;
+    color: rgb(245,24,124);
 }
 
 
@@ -123,13 +68,14 @@
 
     .hero-tilt-header{
         position: absolute;
-        top: 20px;
-        min-width: 400px;
+        top: 40%;
         width: 100%;
-        right: -140px;
-        letter-spacing: 2px;
-        font-size: 15px;
+        right: 45%;
+        font-family: Monoton;
+        letter-spacing: 10px;
+        font-size: 2em;
         transform: rotate(-90deg);
+        color: rgb(245,24,124);
     }
      
     .hero-header{
@@ -140,18 +86,5 @@
         top: -20px;
     }
 
-    .tilt-footer{
-        position: absolute;
-        top: 270px;
-        left: -55px;
-        background-color: #9EFF41;
-        color: black;
-        font-family: BarcodeFont;
-        font-size: 35px;
-        letter-spacing: 1px;
-        padding: 5px;
-        min-width: 85px;
-        width: fit-content;
-    }
  
 }

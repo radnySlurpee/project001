@@ -1,0 +1,29 @@
+.intro-container{
+    padding-top: 70px;
+    font-size: 18px;
+}
+
+.intro-text{
+    padding-top: 70px;
+    height: 300px;
+    text-align: center;
+    font-size: 2.5em;
+    letter-spacing: 10px;
+    font-family: Monoton;
+}
+
+
+@media only screen and (max-width: 991px) {
+
+    .intro-text{
+        padding-top: 70px;
+        min-width: 300px;
+        height: 300px;
+        text-align: center;
+        font-size: 1.2em;
+        letter-spacing: 5px;
+        font-family: Monoton;
+    }
+    
+     
+}

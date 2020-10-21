@@ -1,19 +1,24 @@
 @font-face {
     font-family: 'BebasNeue';
-    src: local('BebasNeue'), url(./assets/BebasNeue-Regular.ttf) format('truetype');
+    src: local('BebasNeue'), url(./assets/fonts/BebasNeue-Regular.ttf) format('truetype');
 }
 
 @font-face {
     font-family: 'Poppins';
-    src: local('Poppins'), url(./assets/Poppins-Regular.ttf) format('truetype');
+    src: local('Poppins'), url(./assets/fonts/Poppins-Regular.ttf) format('truetype');
 }
 
 @font-face {
   font-family: 'BarcodeFont';
-  src: local('BarcodeFont'), url(./assets/BarcodeFont.ttf) format('truetype');
+  src: local('BarcodeFont'), url(./assets/fonts/BarcodeFont.ttf) format('truetype');
 }
 
 @font-face {
   font-family: 'Futura';
-  src: local('FutuLt'), url(./assets/FutuLt.ttf) format('truetype');
+  src: local('FutuLt'), url(./assets/fonts/FutuLt.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Monoton';
+  src: local('Monoton-Regular'), url(./assets/fonts/Monoton-Regular.ttf) format('truetype');
 }
