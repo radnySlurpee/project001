@@ -1,7 +1,18 @@
 .toggle-btn {
-    position: absolute;
-    margin: 1.4em;
-    padding: 1em;
+    position: fixed;
+    margin: 10px;
+    padding: 10px;
     right: 0;
-    z-index: 5;
+    z-index: 99;
+}
+
+.logo-container{
+    position: fixed;
+    margin: 10px;
+    padding-left: 5px;
+    left: 0;
+    top: -42px;
+    z-index: 99;
+    mix-blend-mode: difference;
+    transform-origin: center;
 }

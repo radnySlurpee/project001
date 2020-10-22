@@ -7,24 +7,41 @@ import { connect } from 'react-redux';
 
 import { toggleNavigationHidden } from '../../redux/navigation/navigation.actions';
 import {selectNavigationHidden} from '../../redux/navigation/navigation.selectors';
+import {ReactComponent as Logo} from '../../assets/introduction_R.svg';
 
 import { motion } from "framer-motion";
 
 const Navigation = ({ toggleNavigationHidden, hidden }) => {
 
     return(
-        <motion.div
-            className="toggle-btn"
-            initial={{opacity: 0, x: 50}}
-            animate={{opacity: 1, x: 0}}
-            transition={{  
-            delay: 1,
-            duration: 0.2,
-            ease: "linear"
-            }}
-            onClick={toggleNavigationHidden}>
-                {hidden ? <Navlogo/> : <NavlogoClose/>}
-        </motion.div>
+        <div>
+            <motion.div
+                className="toggle-btn"
+                initial={{ opacity: 0, y: -50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{  
+                delay: 1,
+                duration: 0.2,
+                ease: "easeOut"
+                }}
+                onClick={toggleNavigationHidden}>
+                    {hidden ? <Navlogo/> : <NavlogoClose/>}
+            </motion.div>
+
+            <motion.div
+                className="logo-container"
+                initial={{ opacity: 0, y: -50 }}
+                animate={{ opacity: 1, y: 0 }}
+                whileHover={{ scale: 1.2}}
+                whileTap={{ rotate: -360}}
+                transition={{
+                duration: 0.2,
+                ease: "easeOut" }}>
+                    <Logo width="51px"/>
+            </motion.div>
+
+        </div>
+
     )
 }
 

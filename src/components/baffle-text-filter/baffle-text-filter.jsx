@@ -22,8 +22,8 @@ const BaffleTextFilter = ({text, speed, obfuscate, type}) => {
         characters={type}
         exclude={[" ", "!"]}
         obfuscate={obfuscate}
-        revealDuration={3000}
-        revealDelay={3000}>
+        revealDuration={500}
+        revealDelay={1000}>
             {text} 
         </Baffle>   
     ) 

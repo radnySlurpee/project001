@@ -10,7 +10,7 @@
 .hero-image-wrapper{
     width: 100%;
     height: 100%;
-    background-color: chartreuse;
+    background-color:rgb(245,24,124);
     position: absolute;
 }
 
@@ -35,13 +35,13 @@
 
 .hero-tilt-header{
     position: absolute;
-    top: 40%;
+    top: 30%;
     width: 100%;
     right: 30%;
     font-family: Monoton;
     letter-spacing: 30px;
     font-size: 7em;
-    transform: rotate(-90deg);
+    transform: rotate(90deg);
     color: rgb(245,24,124);
 }
 
@@ -58,7 +58,7 @@
     }
 
     .hero-image-wrapper{
-        background-color: chartreuse;
+        background-color: rgb(245,24,124);
     }
      
     .hero-image{
@@ -68,13 +68,13 @@
 
     .hero-tilt-header{
         position: absolute;
-        top: 40%;
+        top: 20%;
         width: 100%;
         right: 45%;
         font-family: Monoton;
         letter-spacing: 10px;
         font-size: 2em;
-        transform: rotate(-90deg);
+        transform: rotate(90deg);
         color: rgb(245,24,124);
     }
      

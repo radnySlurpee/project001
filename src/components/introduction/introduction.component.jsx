@@ -5,19 +5,37 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import {ReactComponent as IntroductionRsvg} from '../../assets/introduction_R.svg';
+import { motion } from "framer-motion";
+
+import BaffleTextFilter from '../baffle-text-filter/baffle-text-filter';
+import {ReactComponent as Logo} from '../../assets/introduction_R.svg';
 
 
 const Introdution = () => {
     return (  
         <Row className="intro-container">
             <Col>
-                <IntroductionRsvg/> 
-                <br/>
                 <div className="intro-text"> 
-                    If at first you don’t succeed; <br/> call it version 1.0
+                    <BaffleTextFilter 
+                    text={"TECHNOLOGY IS BEST WHEN IT BRINGS PEOPLE TOGETHER"} 
+                    speed={100} 
+                    obfuscate={false}
+                    type={"tone"}/>
                 </div>
-                </Col>
+                <br/>
+                
+
+                <motion.div
+                    initial={{ opacity: 0, y: -50 }}
+                    animate={{ opacity: 1, y: 0}}
+                    transition={{
+                        delay: 2,
+                        duration: 0.3,
+                        ease: "linear" }}>
+                            <Logo/>
+                </motion.div>
+
+            </Col>
         </Row>
     )
 }

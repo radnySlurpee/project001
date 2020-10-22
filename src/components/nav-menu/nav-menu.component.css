@@ -1,11 +1,18 @@
 .nav-menu {
-    z-index: 4;
-    position: absolute;
-    background: #101010;
-    height: 100%;
+    z-index: 50;
+    position: fixed;
+    background: #e94560;
+    min-height: 100vh;
     width: 100%;
 }
 
+.nav-menu-overlay{
+    z-index: 49;
+    position: fixed;
+    background: #1A1A2E;
+    min-height: 100vh;
+    width: 100%;
+}
 
 .nav-data {
     padding: 6em 0 0 2em;
