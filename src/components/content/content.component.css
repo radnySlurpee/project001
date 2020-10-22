@@ -1,0 +1,42 @@
+.content-container{
+    margin-top: 100px;
+    font-size: 20px;
+    align-items: center;
+    letter-spacing: 1px;
+   
+}
+
+.image-content{
+    width: 300px;
+    box-shadow: 10px 10px rgb(30,30,30);
+}
+
+.content-header{
+    font-family: Monoton;
+    letter-spacing: 5px;
+    font-size: 1em;
+}
+
+.content-logo{
+    width: 100px;
+}
+
+/* Responsiveness */
+
+@media only screen and (max-width: 991px) {
+    .content-container{
+        padding: 55px;
+        margin-top: 20px;
+        font-size: 15px;
+        align-items: justify;
+        letter-spacing: 1.2px;
+        text-align: center;
+    }
+
+    .image-content{
+        width: 220px;
+        box-shadow: 10px 10px rgb(30,30,30);
+    }
+    
+    
+}

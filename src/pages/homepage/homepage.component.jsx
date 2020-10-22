@@ -10,6 +10,7 @@ import Image from 'react-bootstrap/Image';
 import Hero from '../../components/hero/hero.component';
 import Introduction from '../../components/introduction/introduction.component';
 import Biography from '../../components/bio/bio.component';
+import Content from '../../components/content/content.component';
 
 //assets
 import RadPoster1image from '../../assets/radPoster1.jpg'
@@ -36,6 +37,16 @@ const HomePage = () => {
                     <Image src={RadPoster1image} fluid />
                 </div>
               </Row>
+
+              <Row>
+                <div className="portfolio-text">
+                    <p>Portfolio</p>
+                </div>
+              </Row>
+
+              <Content/>
+              <Content/>
+
           </Container>
 
      </div>   

@@ -20,8 +20,9 @@
 }
 
 .hero-image-footer{
-    font-size: 30px;
-    font-family: Poppins;
+    font-size: 1.3em;
+    font-family: Futura;
+    letter-spacing: 10px;
 }
 
 .hero-header{
@@ -64,6 +65,12 @@
     .hero-image{
         min-width: 250px;
         height: auto;
+    }
+
+    .hero-image-footer{
+        font-size: 1em;
+        font-family: Futura;
+        letter-spacing: 8px;
     }
 
     .hero-tilt-header{

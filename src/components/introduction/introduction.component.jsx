@@ -23,8 +23,6 @@ const Introdution = () => {
                     type={"tone"}/>
                 </div>
                 <br/>
-                
-
                 <motion.div
                     initial={{ opacity: 0, y: -50 }}
                     animate={{ opacity: 1, y: 0}}
@@ -34,7 +32,19 @@ const Introdution = () => {
                         ease: "linear" }}>
                             <Logo/>
                 </motion.div>
-
+                <br/><br/>
+                <motion.div 
+                    className="arrow-down"
+                    initial={{ opacity: 0, y: -40 }}
+                    animate={{ opacity: 1, y: 0}}
+                    transition={{
+                        delay: 3,
+                        repeat: 3,
+                        duration: 0.5,
+                        ease: "linear" }}>
+                    <span>&#8595;</span>
+                </motion.div>
+                
             </Col>
         </Row>
     )

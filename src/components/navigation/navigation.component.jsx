@@ -31,13 +31,19 @@ const Navigation = ({ toggleNavigationHidden, hidden }) => {
             <motion.div
                 className="logo-container"
                 initial={{ opacity: 0, y: -50 }}
-                animate={{ opacity: 1, y: 0 }}
-                whileHover={{ scale: 1.2}}
-                whileTap={{ rotate: -360}}
-                transition={{
-                duration: 0.2,
-                ease: "easeOut" }}>
-                    <Logo width="51px"/>
+                animate={{ opacity: 1, y: 0 }}>
+
+                    <motion.div 
+                        className="logo-tag"
+                        whileHover={{ backgroundColor: 'rgba(158,255,65,0.0)'}}
+                        whileTap={{ scale: 3, x: 50, backgroundColor: 'rgba(158,255,65,0.0)'}}
+                        transition={{
+                            duration: 0.2,
+                            ease: "easeOut" }}>
+
+                        <Logo width="51px"/>
+                    </motion.div>
+                    
             </motion.div>
 
         </div>

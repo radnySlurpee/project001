@@ -2,6 +2,7 @@
     padding-top: 70px;
     font-size: 18px;
     text-align: center;
+    height: 100vh;
 }
 
 .intro-text{
@@ -12,6 +13,9 @@
     font-family: Monoton;
 }
 
+.arrow-down{
+    font-size: 26px;
+}
 
 @media only screen and (max-width: 991px) {
 

@@ -4,6 +4,7 @@
     padding: 10px;
     right: 0;
     z-index: 99;
+    mix-blend-mode: difference;
 }
 
 .logo-container{
@@ -15,4 +16,12 @@
     z-index: 99;
     mix-blend-mode: difference;
     transform-origin: center;
+    
+}
+
+.logo-tag{
+    height: 105px;
+    margin-left: -10px;
+    width: 58px;
+    background-color: rgb(158,255,65);
 }

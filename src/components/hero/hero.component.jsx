@@ -39,7 +39,7 @@ const Hero = () => {
         
               <div className="hero-image-footer">
                 <BaffleTextFilter 
-                  text={"01"} 
+                  text={"INFORMATION TECHNOLOGY"} 
                   speed={150} 
                   obfuscate={false}
                   type={"kanji"}/>
@@ -51,9 +51,9 @@ const Hero = () => {
                initial={{opacity: 0}}
                animate={{opacity: 1}}
               transition={{  
-                delay: 3,
-                duration: 2,
-                ease: "linear"
+                delay: 4,
+                duration: 1,
+                ease: "easeOut"
               }}>
 
               <div className="hero-header"> 

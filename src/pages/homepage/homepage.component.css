@@ -24,6 +24,15 @@
 
 }
 
+.portfolio-text{
+    margin-top: 150px;
+    width: 100%;
+    font-family: Monoton;
+    text-align: center;
+    letter-spacing: 10px;
+    font-size: 5em;
+}
+
 .footer-padding{
     text-align: center;
     padding: 50px;
@@ -34,5 +43,12 @@
 
 @media only screen and (max-width: 991px) {
 
-     
+    .portfolio-text{
+        margin-top: 150px;
+        width: 100%;
+        font-family: Monoton;
+        text-align: center;
+        letter-spacing: 5px;
+        font-size: 1.8em;
+    }
 }
