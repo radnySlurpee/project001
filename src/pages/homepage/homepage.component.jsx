@@ -11,10 +11,14 @@ import Hero from '../../components/hero/hero.component';
 import Introduction from '../../components/introduction/introduction.component';
 import Biography from '../../components/bio/bio.component';
 import Content from '../../components/content/content.component';
+import WithObserver from '../../components/with-observer/with-observer.component';
+
+
 
 //assets
 import RadPoster1image from '../../assets/radPoster1.jpg'
 
+const ContentWithObserver = WithObserver(Content);
 
 const HomePage = () => {
 
@@ -22,7 +26,7 @@ const HomePage = () => {
      <div className="homepage-container">
           <Container>
 
-            <Introduction/>           
+            <Introduction/> 
             <Hero/>
             <Biography/>
             
@@ -44,8 +48,8 @@ const HomePage = () => {
                 </div>
               </Row>
 
-              <Content/>
-              <Content/>
+              <ContentWithObserver/>
+              <ContentWithObserver/>
 
           </Container>
 

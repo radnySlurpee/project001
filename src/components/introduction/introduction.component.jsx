@@ -15,21 +15,31 @@ const Introdution = () => {
     return (  
         <Row className="intro-container">
             <Col>
-                <div className="intro-text"> 
+                <motion.div
+                    className="intro-text"
+                    initial={{ opacity: 0, y: -50 }}
+                    animate={{ opacity: 1, y: 0}}
+                    transition={{
+                        delay: 1,
+                        duration: 0.3,
+                        ease: "easeOut"}}> 
+
                     <BaffleTextFilter 
                     text={"TECHNOLOGY IS BEST WHEN IT BRINGS PEOPLE TOGETHER"} 
-                    speed={100} 
+                    setDuration={2000}
+                    speed={150} 
                     obfuscate={false}
-                    type={"tone"}/>
-                </div>
+                    type={"kanji"}/>
+
+                </motion.div>
                 <br/>
                 <motion.div
                     initial={{ opacity: 0, y: -50 }}
                     animate={{ opacity: 1, y: 0}}
                     transition={{
-                        delay: 2,
+                        delay: 3,
                         duration: 0.3,
-                        ease: "linear" }}>
+                        ease: "easeOut" }}>
                             <Logo/>
                 </motion.div>
                 <br/><br/>

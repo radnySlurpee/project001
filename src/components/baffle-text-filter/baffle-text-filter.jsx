@@ -2,7 +2,7 @@ import React from 'react';
 import Baffle from "baffle-react";
 
 
-const BaffleTextFilter = ({text, speed, obfuscate, type}) => {
+const BaffleTextFilter = ({text, speed, obfuscate, type, setDuration}) => {
 
     switch(type) {
         case 'kanji':
@@ -12,7 +12,7 @@ const BaffleTextFilter = ({text, speed, obfuscate, type}) => {
              type = "░▓█ ▒░▓▓░ █▓░░▓ ▒▒ ▓▒▓░▒█▒░ ▓▓▒ █░";
              break;
         default:
-             type = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz";
+             type = "01";
              break;
       }
 
@@ -22,7 +22,7 @@ const BaffleTextFilter = ({text, speed, obfuscate, type}) => {
         characters={type}
         exclude={[" ", "!"]}
         obfuscate={obfuscate}
-        revealDuration={500}
+        revealDuration={setDuration}
         revealDelay={1000}>
             {text} 
         </Baffle>   
