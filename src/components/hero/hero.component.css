@@ -1,6 +1,9 @@
 .hero{
-    padding-top: 70px;
+    margin-top: 100px;
     font-size: 18px;
+    background: url("./../../assets/images/DotPattern.png");
+    background-size: 200px;
+    background-repeat: repeat;
 }
 
 .hero-container{
@@ -17,6 +20,7 @@
 .hero-image{
     left: -280px;
     top: -40px;
+    width: 450px;
 }
 
 .hero-image-footer{
@@ -51,7 +55,10 @@
 
 @media only screen and (max-width: 991px) {
     .hero{
-        padding-top: 150px;
+        margin-top: 100px;
+        background: url("./../../assets/images/DotPattern.png");
+        background-size: 130px;
+        background-repeat: repeat;
      }
 
     .hero-container{
@@ -75,7 +82,7 @@
 
     .hero-tilt-header{
         position: absolute;
-        top: 20%;
+        top: 33%;
         width: 100%;
         right: 45%;
         font-family: Monoton;

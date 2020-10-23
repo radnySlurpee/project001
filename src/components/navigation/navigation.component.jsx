@@ -20,7 +20,7 @@ const Navigation = ({ toggleNavigationHidden, hidden }) => {
                 initial={{ opacity: 0, y: -50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{  
-                delay: 1,
+                delay: 2,
                 duration: 0.2,
                 ease: "easeOut"
                 }}
