@@ -11,7 +11,6 @@
 
 
 .intro-text{
-    padding-top: 70px;
     height: 300px;
     font-size: 2em;
     letter-spacing: 10px;
@@ -20,7 +19,7 @@
 
 .arrow-down{
     font-size: 26px;
-    margin-top: 350px;
+    margin-top: 370px;
 }
 
 @media only screen and (max-width: 991px) {
@@ -29,9 +28,10 @@
         background-image:url('../../assets/images/rad-landing.jpg');
         background-attachment: scroll;
         background-repeat: no-repeat;
-        background-position: center;
-        background-size: 1000px;
+        background-position: bottom;
+        background-size: cover;
         min-width: 300px;
+        height: 700px;
     }
 
     .arrow-down{
@@ -39,7 +39,7 @@
     }
 
     .intro-text{
-        padding-top: 70px;
+        padding-top: 20px;
         min-width: 300px;
         height: 160px;
         font-size: 1.2em;

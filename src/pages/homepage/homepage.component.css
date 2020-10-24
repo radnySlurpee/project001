@@ -14,14 +14,12 @@
 
 .first-text-row{
     margin-top: 200px;
-    margin-bottom: 200px;
     height: 300px;
     font-family: Poppins;
-    letter-spacing: 10px;
-    font-size: 6em;
+    letter-spacing: 3px;
+    font-size: 2em;
     text-align: center;
     width: fit-content;
-
 }
 
 .portfolio-text{
@@ -43,12 +41,13 @@
 
 @media only screen and (max-width: 991px) {
 
-    .portfolio-text{
-        margin-top: 150px;
-        width: 100%;
-        font-family: Monoton;
+    .first-text-row{
+        margin-top: 100px;
+        height: 200px;
+        min-width: 300px;
+        font-family: Poppins;
+        letter-spacing: 3px;
+        font-size: 1em;
         text-align: center;
-        letter-spacing: 5px;
-        font-size: 1.8em;
     }
 }

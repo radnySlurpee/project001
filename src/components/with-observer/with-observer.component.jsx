@@ -5,13 +5,13 @@ import { useInView } from 'react-intersection-observer';
 const WithObserver = WrappedComponent => {
     
     const Observer = ({ ...otherProps }) => {
-
-        const [ref, inView, entry] = useInView({
+        //const [ref, inView, entry]
+        const [ref, inView] = useInView({
             threshold: 0.5,
             triggerOnce: true
         });
     
-        console.log(entry);
+        //console.log(entry);
     
         const variants = {
             visible: { opacity: 1},

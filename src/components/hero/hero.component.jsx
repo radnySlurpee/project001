@@ -9,7 +9,6 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 
-import BaffleTextFilter from '../../components/baffle-text-filter/baffle-text-filter.jsx';
 import REDradimage from '../../assets/REDrad.jpg';
 
 const Hero = () => {
@@ -29,7 +28,6 @@ const Hero = () => {
     visible: { width: "0%", right: 0 },
     hidden: { width: "100%", right: 0}
   }
-
 
     return(
         <Row className="hero">
@@ -57,41 +55,41 @@ const Hero = () => {
               <Image className="hero-image" src={REDradimage} fluid />
         
               <div className="hero-image-footer">
-                <BaffleTextFilter 
-                  text={"INFORMATION TECHNOLOGY"}
-                  setDuration={3000} 
-                  speed={150}
-                  obfuscate={!inView}
-                  type={"kanji"}/>
+                INFORMATION TECHNOLOGY
               </div>
+
             </motion.div>
           </Col>
           <Col> 
             <motion.div
               animate={inView ? 'visible' : 'hidden'}
-              variants={heroImageWrapperVariants}
+              variants={variants}
               ref={ref}
-              transition={{  
-                duration: 1,
-                ease: "easeOut"
+              transition={{
+                delay:2,
+                damping: 15, 
+                mass: 0.27, 
+                stiffness: 55
               }}>
 
               <div className="hero-header"> 
-                <BaffleTextFilter 
-                  text={"I'm Rad"}
-                  setDuration={1000}  
-                  speed={200}
-                  obfuscate={!inView}
-                  type={"kanji"}/>
+                  I'm Rad
               </div>
+            </motion.div>
+
+            <motion.div
+              animate={inView ? 'visible' : 'hidden'}
+              variants={variants}
+              ref={ref}
+              transition={{
+                delay: 3,
+                damping: 15, 
+                mass: 0.27, 
+                stiffness: 55
+              }}>
 
               <div className="hero-tilt-header">
-              <BaffleTextFilter 
-                  text={"HELLO"} 
-                  setDuration={2000}  
-                  speed={200}
-                  obfuscate={!inView}
-                  type={"tone"}/>
+                HELLO
               </div>
             </motion.div>
               

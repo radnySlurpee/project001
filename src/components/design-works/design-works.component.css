@@ -1,0 +1,21 @@
+
+.image-box{
+    margin: 75px;
+}
+
+.image-screen{
+    width: 300px;
+    height: 100%;
+    position: absolute;
+}
+
+@media only screen and (max-width: 991px) {
+    .image-box{
+        margin: 1px;
+    }
+
+    .row2-container{
+        margin-top: 50px;
+    }
+    
+}

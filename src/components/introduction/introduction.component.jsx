@@ -24,7 +24,7 @@ const Introdution = () => {
                         ease: "easeOut"}}> 
 
                     <BaffleTextFilter 
-                    text={"RAD"} 
+                    text={"JOSEPH RADNY"} 
                     setDuration={2000}
                     speed={150} 
                     obfuscate={false}
@@ -40,7 +40,6 @@ const Introdution = () => {
                         repeat: 3,
                         duration: 0.5,
                         ease: "linear" }}>
-                            . <br/>
                     <span>&#8595;</span>
                 </motion.div>
                 
