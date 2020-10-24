@@ -13,32 +13,38 @@
 .intro-text{
     padding-top: 70px;
     height: 300px;
-    font-size: 2.5em;
+    font-size: 2em;
     letter-spacing: 10px;
-    font-family: Monoton;
+    font-family: Futura;
 }
 
 .arrow-down{
     font-size: 26px;
+    margin-top: 350px;
 }
 
 @media only screen and (max-width: 991px) {
 
     .intro-container{
         background-image:url('../../assets/images/rad-landing.jpg');
-        background-attachment: fixed;
+        background-attachment: scroll;
+        background-repeat: no-repeat;
         background-position: center;
-        background-size: cover;
+        background-size: 1000px;
         min-width: 300px;
+    }
+
+    .arrow-down{
+        font-size: 22px;
     }
 
     .intro-text{
         padding-top: 70px;
         min-width: 300px;
-        height: 300px;
+        height: 160px;
         font-size: 1.2em;
         letter-spacing: 5px;
-        font-family: Monoton;
+        font-family: Futura;
     }
 
 
