@@ -29,7 +29,7 @@ const Introdution = () => {
                     setDuration={2000}
                     speed={150} 
                     obfuscate={false}
-                    type={"kanji"}/>
+                    type={"tone"}/>
 
                 </motion.div>
                 <br/>

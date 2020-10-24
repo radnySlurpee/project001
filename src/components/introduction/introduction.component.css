@@ -3,7 +3,12 @@
     font-size: 18px;
     text-align: center;
     height: 800px;
+    background-image:url('../../assets/images/rad-landing.jpg');
+    background-attachment: fixed;
+    background-position: right;
+    background-size:auto;
 }
+
 
 .intro-text{
     padding-top: 70px;
@@ -19,6 +24,14 @@
 
 @media only screen and (max-width: 991px) {
 
+    .intro-container{
+        background-image:url('../../assets/images/rad-landing.jpg');
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        min-width: 300px;
+    }
+
     .intro-text{
         padding-top: 70px;
         min-width: 300px;
@@ -27,6 +40,8 @@
         letter-spacing: 5px;
         font-family: Monoton;
     }
+
+
     
      
 }
