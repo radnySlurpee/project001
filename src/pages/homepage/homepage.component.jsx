@@ -3,18 +3,18 @@ import "./homepage.component.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
+//import Row from 'react-bootstrap/Row';
 
 //components
 import Hero from '../../components/hero/hero.component';
 import Introduction from '../../components/introduction/introduction.component';
-import Content from '../../components/content/content.component';
-import WithObserver from '../../components/with-observer/with-observer.component';
-import DesignWorks from '../../components/design-works/design-works.component';
+//import Content from '../../components/content/content.component';
+//import WithObserver from '../../components/with-observer/with-observer.component';
+//import DesignWorks from '../../components/design-works/design-works.component';
 
 
-const ContentWithObserver = WithObserver(Content);
-const DesignWorksWithObserver = WithObserver(DesignWorks);
+//const ContentWithObserver = WithObserver(Content);
+//const DesignWorksWithObserver = WithObserver(DesignWorks);
 
 const HomePage = () => {
 
@@ -22,11 +22,11 @@ const HomePage = () => {
      <div className="homepage-container">
           <Container fluid>
 
-            <Introduction/>
+            <Introduction/> <Hero/>
             { /*
         
 
-            
+            <Hero/>
             
               <Row>
                 <div className="first-text-row">

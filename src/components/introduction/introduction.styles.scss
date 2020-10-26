@@ -4,26 +4,57 @@
     font-size: 18px;
     
     .intro-content{
-        width: 50%;
         padding: 10px 20px 10px 20px;
-        background: #141E30;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-        .header{
-
-        }
-
+        background: #0a141d;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #0a141d, #1b304b);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #0a141d, #1b304b);
+    
         .intro-content-logo{
             position: absolute;
             bottom: 30px;
             left: 50px;
 
-            h2{
+            button{
                font-size: 8em;
-               font-family: Futura; 
+               font-family: ShareTechMono; 
+               background-color: transparent;
+               border: none;
+               user-select: none;
+               outline: none;
+               color: #ffffff;
                letter-spacing: 0.5em;
+               text-shadow: 6px 6px #161E31;
             }
+        }
+
+        
+        @media only screen and (max-width: 768px) {
+
+            .intro-content-logo{
+                position: absolute;
+                bottom: 40px;
+
+                button{
+                    font-size: 5em;
+                    letter-spacing: 0.4em;
+                }
+            }
+
+        }
+
+        @media only screen and (max-width: 576px) {
+
+            .intro-content-logo{
+                position: absolute;
+                bottom: 100px;
+                left: 25%;
+
+                button{
+                    font-size: 5em;
+                    letter-spacing: 0.4em;
+                }
+            }
+
         }
     }
 
@@ -34,41 +65,3 @@
     }
 }
 
-
-@media only screen and (max-width: 991px) {
-
-    .intro-container{
-        position: relative;
-        height: 100vh;
-        font-size: 16px;
-        .intro-content{
-            width: 50%;
-            padding: 10px 20px 10px 20px;
-            background: #141E30;  /* fallback for old browsers */
-            background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-            .header{
-    
-            }
-    
-            .intro-content-logo{
-                position: absolute;
-                bottom: 130px;
-                left: 20px;
-    
-                h2{
-                   font-size: 5em;
-                   font-family: Futura; 
-                   letter-spacing: 0.4em;
-                }
-            }
-        }
-    
-        .intro-image{
-            background-image: url('../../assets/images/rad-landing.jpg');
-            background-size: cover;
-            background-position:center ;
-        }
-    }
-
-}

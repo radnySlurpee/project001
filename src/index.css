@@ -22,3 +22,8 @@
   font-family: 'Monoton';
   src: local('Monoton-Regular'), url(./assets/fonts/Monoton-Regular.ttf) format('truetype');
 }
+
+@font-face {
+  font-family: 'ShareTechMono';
+  src: local('ShareTechMono-Regular'), url(./assets/fonts/ShareTechMono-Regular.ttf) format('truetype');
+}

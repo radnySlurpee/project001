@@ -1,0 +1,24 @@
+.header{
+    position: fixed;
+    z-index: 50;
+    width: 100px;
+
+    .header-logo{
+        width: 60px;
+        height: 60px;
+        margin: 5px;
+    }
+
+    @media only screen and (max-width: 576px) {
+
+        .header-logo{
+            width: 50px;
+            height: 50px;
+            margin: 3px;
+        }
+    }
+
+}
+
+
+
