@@ -1,0 +1,22 @@
+
+  .layout-container{
+    border: 2px solid rgba(37, 247, 149, 0.4);
+    margin-top: 75px;
+  }
+
+
+  .layout{
+    border: 2px solid rgba(37, 247, 149, 0.4);
+  }
+
+
+  .layout-test{
+    font-size: 18px;
+    text-align: center;
+    background-image:url('../../assets/images/rad-landing.jpg');
+    background-position: center;
+    background-size:cover;
+}
+
+
+  

@@ -20,10 +20,13 @@ const HomePage = () => {
 
     return(
      <div className="homepage-container">
-          <Container>
+          <Container fluid>
 
-            <Introduction/> 
-            <Hero/>
+            <Introduction/>
+            { /*
+        
+
+            
             
               <Row>
                 <div className="first-text-row">
@@ -36,7 +39,7 @@ const HomePage = () => {
 
               <ContentWithObserver/>
               <ContentWithObserver/>
-
+          */ }
           </Container>
 
      </div>   

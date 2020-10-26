@@ -1,49 +1,30 @@
 import React from 'react';
-import "./introduction.component.css";
+import "./introduction.styles.scss";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import { motion } from "framer-motion";
+import {ReactComponent as Logo} from '../../assets/images/radsLogoWhite.svg';
+//import { motion } from "framer-motion";
 
-import BaffleTextFilter from '../baffle-text-filter/baffle-text-filter';
+//import BaffleTextFilter from '../baffle-text-filter/baffle-text-filter';
 
 
 const Introdution = () => {
     return (  
         <Row className="intro-container">
-            <Col>
-                <motion.div
-                    className="intro-text"
-                    initial={{ opacity: 0, y: -50 }}
-                    animate={{ opacity: 1, y: 0}}
-                    transition={{
-                        delay: 1,
-                        duration: 0.3,
-                        ease: "easeOut"}}> 
+            <Col className="intro-content">
+                <div className="header">
+                    <Logo width="60" height="60"/>
+                </div>
 
-                    <BaffleTextFilter 
-                    text={"JOSEPH RADNY"} 
-                    setDuration={2000}
-                    speed={150} 
-                    obfuscate={false}
-                    type={"tone"}/>
+                <div className="intro-content-logo">
+                   <h2> RA <br/> DS </h2>
+                </div>
 
-                </motion.div>
-                <motion.div 
-                    className="arrow-down"
-                    initial={{ opacity: 0, y: -40 }}
-                    animate={{ opacity: 1, y: 0}}
-                    transition={{
-                        delay: 3,
-                        repeat: 3,
-                        duration: 0.5,
-                        ease: "linear" }}>
-                    <span>&#8595;</span>
-                </motion.div>
-                
             </Col>
+            <Col className="intro-image"></Col>
         </Row>
     )
 }

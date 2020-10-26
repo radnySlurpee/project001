@@ -1,0 +1,74 @@
+.intro-container{
+    position: relative;
+    height: 100vh;
+    font-size: 18px;
+    
+    .intro-content{
+        width: 50%;
+        padding: 10px 20px 10px 20px;
+        background: #141E30;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        .header{
+
+        }
+
+        .intro-content-logo{
+            position: absolute;
+            bottom: 30px;
+            left: 50px;
+
+            h2{
+               font-size: 8em;
+               font-family: Futura; 
+               letter-spacing: 0.5em;
+            }
+        }
+    }
+
+    .intro-image{
+        background-image: url('../../assets/images/rad-landing.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+
+@media only screen and (max-width: 991px) {
+
+    .intro-container{
+        position: relative;
+        height: 100vh;
+        font-size: 16px;
+        .intro-content{
+            width: 50%;
+            padding: 10px 20px 10px 20px;
+            background: #141E30;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            .header{
+    
+            }
+    
+            .intro-content-logo{
+                position: absolute;
+                bottom: 130px;
+                left: 20px;
+    
+                h2{
+                   font-size: 5em;
+                   font-family: Futura; 
+                   letter-spacing: 0.4em;
+                }
+            }
+        }
+    
+        .intro-image{
+            background-image: url('../../assets/images/rad-landing.jpg');
+            background-size: cover;
+            background-position:center ;
+        }
+    }
+
+}
