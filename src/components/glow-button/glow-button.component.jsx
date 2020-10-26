@@ -17,7 +17,7 @@ const GlowButton = ({children}) => {
     const hoverGlow = {
         active: {
             color: "rgb(219,239,128)",
-            textShadow: "2px 6px 15px #DBEF80",
+            textShadow: "2px 6px 50px #DBEF80",
         },
         inactive: {
             color: "rgb(255,255,255)",

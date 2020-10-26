@@ -22,7 +22,9 @@ const HomePage = () => {
      <div className="homepage-container">
           <Container fluid>
 
-            <Introduction/> <Hero/>
+            <Introduction/>
+            <br/><br/><br/>
+            <Hero/>
             { /*
         
 

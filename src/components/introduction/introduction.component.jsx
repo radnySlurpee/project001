@@ -11,11 +11,10 @@ import GlowButton from '../glow-button/glow-button.component';
 const Introdution = () => {
 
     return (  
-        <Row className="intro-container">
-            <Col className="intro-image" 
-                 md={6}
-                 sm={{ order: 'last' }}>
-
+        <Row className="intro-container" noGutters>
+            <Col className="intro-image"
+                md={6}
+                sm={{ order: 'last' }}>
             </Col>
             <Col className="intro-content">
                 <div className="intro-content-logo">
