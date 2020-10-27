@@ -13,14 +13,14 @@ const BlockReveal = ({color, Delay}) => {
       });
     
       const heroImageWrapperVariants = {
-        visible: { width: "0%", left: "100%"},
-        hidden: { width: "100%", left: "0"}
+        visible: { height: "0%"},
+        hidden: { height: "100%"}
       }
 
     return (   
         <motion.div
             initial={{height:"100%", width:"100%",}}
-            style={{backgroundColor: color, position:'absolute'}}
+            style={{backgroundColor: color, position:'absolute', zIndex:60}}
             animate={inView ? 'visible' : 'hidden'}
             variants={heroImageWrapperVariants}
             ref={ref}

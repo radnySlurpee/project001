@@ -8,6 +8,7 @@ import Container from 'react-bootstrap/Container';
 //components
 import Hero from '../../components/hero/hero.component';
 import Introduction from '../../components/introduction/introduction.component';
+import Landing from '../../components/landing/landing.component';
 //import Content from '../../components/content/content.component';
 //import WithObserver from '../../components/with-observer/with-observer.component';
 //import DesignWorks from '../../components/design-works/design-works.component';
@@ -21,14 +22,14 @@ const HomePage = () => {
     return(
      <div className="homepage-container">
           <Container fluid>
-
+            <Landing/>
             <Introduction/>
-            <br/><br/><br/>
-            <Hero/>
+            
+            
             { /*
         
-
-            <Hero/>
+                <Hero/>
+            
             
               <Row>
                 <div className="first-text-row">

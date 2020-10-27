@@ -29,18 +29,7 @@
             }
         }
 
-
-        .start-arrow{
-            position: absolute;
-            opacity: 50%;
-            right: -5%;
-            top: 50%;
-            font-size: 5em;
-            color: transparent;
-            -webkit-text-stroke: 1px ghostwhite;
-        }
-
-        @media only screen and (max-width: 768px) {
+        @media screen and (max-width: 768px) {
 
             .intro-content-logo{
                 position: absolute;
@@ -48,19 +37,13 @@
 
                 button{
                     font-size: 5em;
-                    letter-spacing: 0.4em;
+                    letter-spacing: 0.3em;
                 }
-            }
-
-            .start-arrow{
-                right: -19%;
-                top: 35%;
-                font-size: 3em;
             }
 
         }
 
-        @media only screen and (max-width: 576px) {
+        @media screen and (max-width: 576px) {
 
             .intro-content-logo{
                 position: absolute;
@@ -71,12 +54,6 @@
                     font-size: 5em;
                     letter-spacing: 0.4em;
                 }
-            }
-
-            .start-arrow{
-                right: -19%;
-                top: 35%;
-                font-size: 3em;
             }
 
         }

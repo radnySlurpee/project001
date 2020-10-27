@@ -1,0 +1,34 @@
+.landing-container{
+    position: relative;
+    height: 100vh;
+    font-size: 18px;
+    font-family: ShareTechMono;
+    padding-top: 100px;
+    
+    .landing-content{
+        font-size:5em;
+    }
+
+    
+    .landing-arrow{
+        font-size: 5em;
+        transform: translateY(500px);
+    }
+
+    @media screen and (max-width: 768px) {
+        .landing-arrow{
+            transform: translateY(70px);
+            font-size: 3em;
+        }
+    }
+
+    @media screen and (max-width: 576px) {
+
+        .landing-arrow{
+            font-size: 4em;
+            transform: translateY(10px);
+        }
+    }
+
+}
+

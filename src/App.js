@@ -7,12 +7,12 @@ import Aboutpage from './pages/aboutpage/aboutpage.component';
 import NavBar from './components/nav-bar/nav-bar.component';
 import SmoothScroll from "./components/smoothScroll/smoothScroll.component";
 
-
 import './App.css';
 
 class App extends React.Component{
-
+  
   render(){
+
     return (
       <div className="App">
         <NavBar/>
