@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import "./glow-button.styles.scss";
-
 import { motion } from 'framer-motion';
 
 const GlowButton = ({children}) => {
