@@ -5,7 +5,7 @@ import { useInView } from 'react-intersection-observer';
 import { motion } from "framer-motion"
 
 
-const BlockReveal = ({color, Delay}) => {
+const BlockReveal = ({color, Delay, children}) => {
 
     const [ref, inView] = useInView({
         threshold: 0.5,
@@ -13,8 +13,8 @@ const BlockReveal = ({color, Delay}) => {
       });
     
       const heroImageWrapperVariants = {
-        visible: { height: "0%"},
-        hidden: { height: "100%"}
+        visible: { height: "0%", },
+        hidden: { height: "100%",}
       }
 
     return (   
@@ -26,11 +26,9 @@ const BlockReveal = ({color, Delay}) => {
             ref={ref}
             transition={{ 
             delay: Delay,
-            damping: 15, 
-            mass: 0.27, 
-            stiffness: 55
-            }}> 
+            duration: 0.8, ease: [0.6, 0.05, -0.01, 0.9] }}> 
             
+            {children}
         </motion.div>
     );
 }

@@ -1,16 +1,25 @@
 .intro-container{
     position: relative;
     height: 100vh;
-    font-size: 18px;
     margin-left: -15px;
     margin-right: -15px;
+    padding: -5px;
     
     .intro-content{
-        padding: 10px 20px 10px 20px;
-        background: #0a141d;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #0a141d, #1b304b);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #0a141d, #1b304b);
-        font-family: ShareTechMono; 
+        background: #ffffff;  /* fallback for old browsers */
+        color: #08070D;
+
+        .intro-context-text{
+            margin: 67px;
+            font-size: calc(18px + 0.5vw);
+           
+
+            h1{
+                font-family: ShareTechMono; 
+                font-size: calc(25px + 2vw);
+                display: flex;
+            }
+        }
 
         .intro-content-logo{
             position: absolute;
@@ -64,6 +73,7 @@
         background-size: cover;
         background-position: top;
         width: 100%;
+        min-height: 300px;
         height: 100%;
     }
 }

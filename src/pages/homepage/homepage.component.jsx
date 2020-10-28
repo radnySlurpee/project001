@@ -10,11 +10,11 @@ import Hero from '../../components/hero/hero.component';
 import Introduction from '../../components/introduction/introduction.component';
 import Landing from '../../components/landing/landing.component';
 //import Content from '../../components/content/content.component';
-//import WithObserver from '../../components/with-observer/with-observer.component';
+import WithObserver from '../../components/with-observer/with-observer.component';
 //import DesignWorks from '../../components/design-works/design-works.component';
 
 
-//const ContentWithObserver = WithObserver(Content);
+const IntroductionWithObserver = WithObserver(Introduction);
 //const DesignWorksWithObserver = WithObserver(DesignWorks);
 
 const HomePage = () => {
@@ -23,9 +23,7 @@ const HomePage = () => {
      <div className="homepage-container">
           <Container fluid>
             <Landing/>
-            <Introduction/>
-            
-            
+            <IntroductionWithObserver/>
             { /*
         
                 <Hero/>

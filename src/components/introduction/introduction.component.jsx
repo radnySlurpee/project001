@@ -6,8 +6,6 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 import BlockReveal from '../block-reveal/block-reveal.component';
-import GlowButton from '../glow-button/glow-button.component';
-
 
 const Introdution = () => {
 
@@ -16,28 +14,23 @@ const Introdution = () => {
             <Col
                 md={6}
                 sm={{ order: 'last' }}>
-                <BlockReveal color="rgb(158,255,65)"  Delay={1}/>
+                <BlockReveal color="rgb(158,255,65)" Delay={0.6}/>
                 <div className="intro-image">
                 </div>
             </Col>
 
             <Col className="intro-content">
-                <div className="intro-content-logo">
+            <BlockReveal color="rgb(9,8,14)" Delay={0.8}>
+            </BlockReveal>
+               <div className="intro-context-text">
+                    <h1>JOSEPH RADNY</h1>
+                    <br/>
+                    <p>
+                        The Man behind the black suit
+                    </p>
+               </div>
                 
-                    <GlowButton>
-                        R
-                    </GlowButton>
-                    <GlowButton>
-                        A
-                    </GlowButton>
-                   <br/>
-                   <GlowButton>
-                        D
-                    </GlowButton>
-                    <GlowButton>
-                        S
-                    </GlowButton>
-                </div>
+               
             </Col>
             
         </Row>

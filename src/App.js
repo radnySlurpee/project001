@@ -16,12 +16,10 @@ class App extends React.Component{
     return (
       <div className="App">
         <NavBar/>
-        <SmoothScroll>
           <Switch>
             <Route exact path='/' component={Homepage} />
             <Route exact path="/about" component={Aboutpage} /> 
           </Switch>
-        </SmoothScroll>
       </div>
     );
   }

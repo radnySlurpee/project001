@@ -5,6 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
+import TextReveal from '../../components/text-reveal/text-reveal.component';
+
 import { motion } from "framer-motion"
 
 
@@ -16,43 +18,29 @@ const Landing = () => {
                 md={6}
                 sm={{ order: 'first' }}>
                     
-                    <motion.div
-                        initial={{skewY: -5, opacity: 0}}
-                        animate={{skewY: 0,  opacity: 1}}
-                        transition={{
-                            delay:1,
-                            ease: "easeOut",
-                            duration: 0.5,
-                        }}>
-                            <h2>
-                                First, solve the problem. 
-                            </h2>
-                    </motion.div>
+                <TextReveal Delay={1}>
+                    <h2>
+                        First, solve the problem. 
+                    </h2>
+                </TextReveal>
 
-                    <motion.div
-                        initial={{skewY: -5, opacity: 0}}
-                        animate={{skewY: 0,  opacity: 1}}
-                        transition={{
-                            delay:2,
-                            ease: "easeOut",
-                            duration: 0.5,
-                        }}>
-                            <h2>
-                                Then, write the code. 
-                            </h2>
-                    </motion.div>
+                <TextReveal Delay={2.5}>
+                    <h2>
+                        Then, write the code.
+                    </h2>
+                </TextReveal>
                     
             </Col>
 
             <Col className="landing-arrow">
                               
                 <motion.div 
-                    initial={{rotate: 90, opacity:0 }}
-                    animate={{y:10,  opacity:1}}
+                    initial={{ rotate: 90, opacity:0 }}
+                    animate={{ y: 10, opacity:1 }}
                     transition={{
-                        delay:3,
+                        delay:4,
                         ease: "easeOut",
-                        duration: 0.5,
+                        duration: 0.5, ease: [0.65, 0, 0.35, 1],
                         repeat: Infinity,
                         repeatType: "reverse", 
                     }}>
