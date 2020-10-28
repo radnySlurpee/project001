@@ -6,6 +6,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 import TextReveal from '../../components/text-reveal/text-reveal.component';
+import WithBounce from '../../components/with-bounce/with-bounce.component';
 
 import { motion } from "framer-motion"
 
@@ -33,20 +34,9 @@ const Landing = () => {
             </Col>
 
             <Col className="landing-arrow">
-                              
-                <motion.div 
-                    initial={{ rotate: 90, opacity:0 }}
-                    animate={{ y: 10, opacity:1 }}
-                    transition={{
-                        delay:4,
-                        ease: "easeOut",
-                        duration: 0.5, ease: [0.65, 0, 0.35, 1],
-                        repeat: Infinity,
-                        repeatType: "reverse", 
-                    }}>
-                        start <span> &#9654; </span>
-                </motion.div>
-
+                <WithBounce>
+                    start <span> &#9654; </span>
+                </WithBounce>
             </Col>
             
         </Row>

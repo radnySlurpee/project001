@@ -6,7 +6,7 @@ import { useInView } from 'react-intersection-observer';
 const TextReveal = ({children, Delay}) => {
 
     const [ref, inView] = useInView({
-        threshold: 0.5,
+        threshold: 0.4,
         triggerOnce: true
     });
 

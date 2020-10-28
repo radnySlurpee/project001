@@ -4,10 +4,14 @@
     font-size: 18px;
     font-family: ShareTechMono;
     padding-top: 100px;
+
+    h2{
+        font-size: calc(1.3em + 1vw);
+    }
     
     .landing-arrow{
         font-size: 5em;
-        transform: translateY(500px);
+        transform: translateY(calc(30vw));
     }
 
     @media screen and (max-width: 768px) {

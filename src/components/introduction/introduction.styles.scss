@@ -10,9 +10,12 @@
         color: #08070D;
 
         .intro-context-text{
-            margin: 67px;
-            font-size: calc(18px + 0.5vw);
-           
+            margin: 20px 67px 40px 67px;
+            font-size: calc(13px + 0.5vw);
+
+            .bouncing-icon{
+                transform: rotate(-90deg);
+            }
 
             h1{
                 font-family: ShareTechMono; 
@@ -73,7 +76,7 @@
         background-size: cover;
         background-position: top;
         width: 100%;
-        min-height: 300px;
+        min-height: 400px;
         height: 100%;
     }
 }

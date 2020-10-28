@@ -6,8 +6,10 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 import BlockReveal from '../block-reveal/block-reveal.component';
+import WithBounce from '../../components/with-bounce/with-bounce.component';
+import TextReveal from '../../components/text-reveal/text-reveal.component';
 
-const Introdution = () => {
+const Introduction = () => {
 
     return (  
         <Row className="intro-container" noGutters>
@@ -23,19 +25,48 @@ const Introdution = () => {
             <BlockReveal color="rgb(9,8,14)" Delay={0.8}>
             </BlockReveal>
                <div className="intro-context-text">
-                    <h1>JOSEPH RADNY</h1>
-                    <br/>
-                    <p>
-                        The Man behind the black suit
-                    </p>
+
+                    <WithBounce>
+                        <div className="bouncing-icon">
+                            who am I <span> &#9660; </span>
+                        </div>
+                    </WithBounce>
+
+                    <TextReveal Delay={1.2}>
+                        <br/>
+                        <h1>JOSEPH RADNY</h1>
+                        <br/>
+                    </TextReveal>
+                    <TextReveal Delay={1.5}>
+                        <p>
+                        The Man behind the black suit.
+                        </p>
+                    </TextReveal>
+                    <TextReveal Delay={1.8}>
+                        <p>
+                        Greetings, I'm a guy with a passion for 
+                        technology and innovation.
+                        </p>
+                        <p>
+                        I used React JS combined with Redux for state management, SASS for CSS preprocessor and other 
+                        things, enough to make it elegant on doing Web development.
+                        </p>
+
+                        <p>
+                        Together with graphic designs using photoshop and illustrator.
+                        And with good experienced in Arduino Robotics using C++, I used that for my thesis back in college,
+                        the project was called vendofy.
+                        </p>
+
+                        <p>
+                        How can I help you?
+                        </p>
+                    </TextReveal>
                </div>
-                
-               
             </Col>
-            
         </Row>
     )
 }
  
-export default Introdution;
+export default Introduction;
 

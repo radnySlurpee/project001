@@ -13,8 +13,6 @@ import Landing from '../../components/landing/landing.component';
 import WithObserver from '../../components/with-observer/with-observer.component';
 //import DesignWorks from '../../components/design-works/design-works.component';
 
-
-const IntroductionWithObserver = WithObserver(Introduction);
 //const DesignWorksWithObserver = WithObserver(DesignWorks);
 
 const HomePage = () => {
@@ -23,7 +21,7 @@ const HomePage = () => {
      <div className="homepage-container">
           <Container fluid>
             <Landing/>
-            <IntroductionWithObserver/>
+            <Introduction/>
             { /*
         
                 <Hero/>

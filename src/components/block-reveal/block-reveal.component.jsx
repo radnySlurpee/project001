@@ -8,7 +8,7 @@ import { motion } from "framer-motion"
 const BlockReveal = ({color, Delay, children}) => {
 
     const [ref, inView] = useInView({
-        threshold: 0.5,
+        threshold: 0.4,
         triggerOnce: true
       });
     
