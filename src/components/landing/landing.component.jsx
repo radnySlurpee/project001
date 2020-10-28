@@ -8,8 +8,6 @@ import Col from 'react-bootstrap/Col';
 import TextReveal from '../../components/text-reveal/text-reveal.component';
 import WithBounce from '../../components/with-bounce/with-bounce.component';
 
-import { motion } from "framer-motion"
-
 
 const Landing = () => {
 
