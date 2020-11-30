@@ -25,10 +25,9 @@ const Landing = () => {
 
                 <TextReveal Delay={2.5}>
                     <h2>
-                        Then, write the code.
+                        Then, do the magic.
                     </h2>
                 </TextReveal>
-                    
             </Col>
 
             <Col className="landing-arrow">
